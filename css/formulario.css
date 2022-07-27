@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: solid;*/
+}
+
+html{
+  font-size: 1px;
+}
+
+body{
+  background-color: #1D1D1B;
+}
+
+form{
+  width: 100%
+}
+
+input{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14rem;
+  color: #29235C;
+  width: 100%;
+  margin-top: 5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #29235C;
+}
+
+label{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16rem;
+  color: #29235C;
+}
+
+textarea{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14rem;
+  color: #29235C;
+  width: 100%;
+  margin-top: 10rem;
+  border: solid 2px #29235C;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28rem;
+  color: #30FEA0;
+}
+
+
+
+
+/* Logo */
+.logo-item{
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  width: 200rem;
+  height: 32rem;
+}
+
+/* Formulario */
+.flex-container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+}
+.flex-item{
+  width: 720px;
+  height: auto;
+  /*width: 46%;*/
+}
+.flex-titulo h2{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 20rem;
+}
+
+.formulario-flex{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350rem;
+  padding: 4% 5% 2% 5%;
+  background-color: #fff;
+  overflow: visible;
+}
+
+.formulario-item{
+  width: 45%;
+}
+
+.col1{
+  margin-right: 10%;
+}
+
+.individual{
+  margin-right: 55%;
+}
+
+#comentario{
+  width:222%;
+  height: 50rem;
+}
+
+.formulario-enviar{
+  margin-top: 2%;
+  width: 18.5%;
+  height: 35rem;
+}
+.formulario-enviar input{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 16rem;
+  letter-spacing: 0.3px;
+  color: #29235C;
+
+  height: 100%;
+  border: none;
+  background-color: #30FEA0;
+}
+
+
+/* footer*/
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0% 20px 0%;
+  background-color: #3C3C3B;
+}
+
+.pie img{
+  position: relative;
+  top: 0px;
+  left: 2.5%;
+  width: 200px;
+  height: auto;
+}
+
+
+/* Mensaje */
+.mensaje-oculto{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.mensaje-visible img{
+  width: 160rem;
+  height: auto;
+  margin-bottom: 30rem;
+}
+.mensaje-visible h2{
+  font-size: 32rem;
+  margin-bottom: 5rem;
+}
+.mensaje-visible p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24rem;
+  color: #fff;
+  width: 500rem;
+}
+.mensaje-registrado p{
+  margin-top: 40rem;
+  font-size: 16rem;
+  width: 100%;
+}
+
+
+
+
+@media (max-width:1000px){
+  .flex-item{
+    width:90%;
+  }
+  .logo-item{
+    margin-bottom: 5%;
+  }
+  .flex-container{
+    position: static;
+    margin-bottom: 10%;
+    padding: 50rem 0 50rem 0;
+    height: auto;
+  }
+  /*
+  footer{
+  position: static;
+}
+*/
+}
+
+
+
+@media (max-width: 800px){
+  html{
+    font-size: 0.8px;
+  }
+  .logo-flex{
+    display: flex;
+    justify-content: center;
+  }
+  .logo-item{
+    margin: 5% 0rem 5% 0rem;
+  }
+  .flex-container{
+    position: static;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    height: auto;
+  }
+  .formulario-flex{
+    height: auto;
+    padding: 5% 5% 5% 5%;
+  }
+  .formulario-item{
+    width: 100%;
+  }
+  input{
+    margin-bottom: 20rem;
+  }
+  .individual{
+    margin-right: 0%;
+  }
+  #comentario{
+    width: 100%;
+  }
+  .col1{
+    margin: 0;
+  }
+  .formulario-enviar{
+    width: 100%;
+    height: 45rem;
+  }
+  .mensaje-visible{
+    padding: 10vh 5% 20vh 5%;
+  }
+  footer{
+    position: static;
+  }
+  .pie img{
+    position: relative;
+    left: 5%;
+  }
+}
+
+
+@media (max-width: 600px){
+  .mensaje-visible{
+    padding: 10vh 5% 20vh 5%;
+  }
+  .mensaje-visible img{
+    width: 160rem;
+    margin-bottom: 20rem;
+  }
+  .mensaje-visible h2{
+    font-size: 32rem;
+    margin-bottom: 5rem;
+  }
+  .mensaje-visible p{
+    width: 90%;
+  }
+  .mensaje-registrado p{
+    font-size: 15rem;
+  }
+}

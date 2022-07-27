@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: solid;*/
+}
+
+html{
+  font-size: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1rem;
+}
+
+button{
+  width: 250rem;
+  height: 50rem;
+  margin-top: 2.5%;
+  border: none;
+  border-radius: 30px;
+  background-color: #30FEA0;
+}
+
+#no-padding-buttom{
+  padding-bottom: 0%;
+}
+
+
+
+
+/*  Primera Pantalla  */
+.portada{
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+}
+
+.portada__item-logo img{
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  width: 200rem;
+  height: 32rem;
+}
+
+.portada__flex{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94.5%;
+  padding-left: 6.25%;
+}
+
+.portada h1{
+  /*padding-top: 115rem;*/
+  font-family: 'Poppins', sans-serif;
+  font-size: 56rem;
+  color: #fff;
+  line-height: 72rem;
+}
+
+.portada p{
+  font-family: 'Poppins', sans-serif;
+  margin-top: -25rem;
+  margin-bottom: 10rem;
+  font-size: 20rem;
+  color: #fff;
+  letter-spacing: 1.5rem;
+  line-height: 32rem;
+}
+
+.portada h4{
+  margin: 0;
+  padding: 0;
+  font-size: 17.5rem;
+  letter-spacing: 1.5rem;
+  color: #29235C;
+}
+
+
+
+/*  Reserva 180 dias  */
+.reserva{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 6.25%;
+  background-color: #1D1D1B;
+}
+
+.reserva h3{
+  font-family: 'Poppins', sans-serif;
+  padding: 15rem 0rem 10rem 0rem;
+  font-size: 38rem;
+  color: #30FEA0;
+}
+
+
+
+/*  Segunda Pantalla  */
+.promocion{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1D1D1B;
+}
+
+.promocion__flex{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9% 0% 10% 0%;
+}
+
+.promocion__item1{
+  width: 45%;
+  /*width: 520rem;*/
+}
+
+.promocion__item2{
+  padding: 3% 0% 3% 0%;
+  width: 55%;
+}
+
+.promocion img{
+  width: 100%;
+  margin: 7.5% 0% 0% 0%;
+  /*margin-left: -5rem;
+  margin-top: -15rem;*/
+}
+
+.promocion ul{
+  margin: 0% 0% 0% 20%;
+  /*margin-left: 150rem;
+  margin-right: 60rem;*/
+}
+
+.promocion h2{
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 60rem;
+  font-size: 46rem;
+  color: #30FEA0;
+}
+
+.promocion h4{
+  padding-bottom: 8rem;
+  font-size: 22rem;
+  color: #30FEA0;
+}
+
+.promocion p{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 32rem;
+  font-size: 16rem;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  line-height: 28rem;
+}
+
+.promocion__item-invisible h2{
+  visibility: hidden;
+  font-size: 0rem;
+  margin: 0rem;
+}
+
+
+
+/*  Pantalla de video */
+.video{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #3C3C3B;
+}
+
+.video__flex{
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  padding: 12% 0% 12% 0%;
+}
+
+.video__item1{
+  width: 45%;
+}
+
+.video__item2{
+  width: 55%;
+}
+
+.video ul{
+  padding-right: 100rem;
+}
+
+.video h2{
+  font-family: 'Poppins', sans-serif;
+  margin: -15rem 0rem 42rem 0rem;
+  font-size: 48rem;
+  color: #30FEA0;
+}
+
+.video h4{
+  margin-bottom: 8rem;
+  font-size: 16rem;
+  line-height: 20rem;
+  color: #30FEA0;
+}
+
+.video p{
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  margin-bottom: 24rem;
+  font-size: 21rem;
+  color: #fff;
+  opacity: 0.8;
+  line-height: 30rem;
+}
+
+.video__item2 {
+  position: relative;
+  margin-bottom: -56.25%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.video__item2 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 56.25%;
+}
+
+.video__item-invisible h2{
+  visibility: hidden;
+  font-size: 0rem;
+  margin: 0rem;
+}
+
+
+
+/* Servicios */
+.servicios{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1D1D1B;
+}
+
+.servicios__item-titulo h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 48rem;
+  margin-top: 25%;
+  color: #30FEA0;
+}
+
+.servicios__flex{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5% 0% 3% 0%;
+}
+
+.servicios__item{
+  padding: 4%;
+  width: 33.3%;
+}
+
+.servicios__item h4{
+  padding-bottom: 16rem;
+  font-size: 20rem;
+  color: #30FEA0;
+}
+
+.servicios__item p{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 24rem;
+  font-size: 16rem;
+  color: #fff;
+  line-height: 28rem;
+}
+
+.servicios__item-boton{
+  margin-bottom: 130rem;
+}
+
+.servicios__item-boton h4{
+  margin: 0;
+  padding: 0;
+  font-size: 17.5rem;
+  letter-spacing: 1.5rem;
+  color: #29235C;
+}
+
+
+
+/* footer*/
+footer{
+  width: 100%;
+  padding: 25px 0% 25px 0%;
+  background-color: #3C3C3B;
+}
+
+.pie img{
+  position: relative;
+  top: 0px;
+  left: 5%;
+  width: 200px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- grande(solo video) ---------------*/
+@media (max-width: 1350px){
+  .video__flex{
+    flex-wrap: wrap-reverse;
+    width: 75%;
+  }
+  .video__item1{
+    width: 100%;
+  }
+  .video__item2{
+    width: 100%;
+    margin: 0 0 10% 0;
+  }
+  .video ul{
+    margin-top: -20rem;
+  }
+  .video__item2 iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .video__item1 h2{
+    visibility: hidden;
+    font-size: 0rem;
+    margin: 0rem;
+  }
+  .video__item-invisible h2{
+    visibility: visible;
+    margin: 100rem 0% -80rem 0%;
+    font-size: 48rem;
+  }
+  .video h4{
+    font-size: 20rem;
+  }
+  .video p{
+    font-size: 22rem;
+  }
+}
+
+
+
+
+
+/* --------------- media ---------------*/
+@media (max-width: 900px){
+
+  html{
+    font-size: 0.85px;
+  }
+  h4{
+    letter-spacing: 1rem;
+  }
+  button{
+    width: 260rem;
+    height: 52.5rem;
+  }
+
+  /*-------- portada --------*/
+  .portada__flex-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .portada__item-logo img{
+    width: 200rem;
+    height: auto;
+    margin: 40rem 0 0 0;
+  }
+  .portada h1{
+    font-size: 58rem;
+    line-height: 82rem
+  }
+  .portada p{
+    font-size: 22rem;
+    line-height: 38rem;
+  }
+  .portada h4{
+    font-size: 18.5rem;
+    letter-spacing: 1.75rem;
+  }
+
+  /*-------- promocion --------*/
+  .promocion__flex{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  .promocion__item2{
+    padding: 10% 0% 10% 0%;
+  }
+  .promocion ul{
+    margin: 0% 0% 0% 15%;
+  }
+  .promocion img{
+    margin: 12.5% 0% 0% 0%;
+  }
+  .promocion__item2 h2{
+    margin: 0% 0% 0% 0%;
+    padding-bottom: 10%;
+    font-size: 40rem;
+  }
+
+  /*-------- video --------*/
+  .video__flex{
+    flex-wrap: wrap-reverse;
+    width: 90%;
+  }
+  .video__item-invisible h2{
+    visibility: visible;
+    margin: 90rem 0% -50rem 0%;
+    font-size: 48rem;
+  }
+
+  /*-------- servicios --------*/
+  .servicios__flex{
+    width: 96%;
+  }
+  .servicios__item{
+    padding: 4%;
+    width: 50%;
+  }
+  .servicios__item-titulo h2{
+    margin-bottom: 40rem;
+    f
+  }
+  .servicios ul{
+    margin-bottom: 40rem;
+  }
+  .servicios p{
+    font-size: 17rem;
+  }
+  .servicios__item h4{
+    font-size: 22rem;
+  }
+  .servicios__item-boton h4{
+    font-size: 18.5rem;
+    letter-spacing: 1.75rem;
+  }
+}
+
+
+
+
+
+/* ----- celular -----*/
+@media (max-width: 600px){
+
+  html{
+    font-size: 0.6px;
+  }
+  h4{
+    letter-spacing: 1.5rem;
+  }
+  button{
+    width: 88vw;
+  }
+
+  /*-------- portada --------*/
+  .portada__flex-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .portada__item-logo img{
+    width: 280rem;
+    height: auto;
+    margin: 50rem 0 0 0;
+  }
+  .portada__flex{
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  .portada h1{
+    font-size: 64rem;
+    line-height: 82rem
+  }
+  .portada p{
+    margin-top: 0%;
+    margin-bottom: 3%;
+    font-size: 26rem;
+    line-height: 42rem;
+  }
+  .portada h4{
+    font-size: 24rem;
+    letter-spacing: 4rem;
+  }
+
+  /*-------- reserva --------*/
+  .reserva{
+    padding-left: 5%;
+  }
+  .reserva h3{
+    font-size: 48rem;
+    padding: 20rem 0 15rem 0;
+  }
+
+  /*-------- promocion --------*/
+  .promocion__flex{
+    flex-flow: column;
+    align-items: center;
+    width: 90%;
+  }
+  .promocion__item1{
+    width: 60%;
+  }
+  .promocion__item2{
+    width: 100%;
+    padding: 0% 2.5% 5% 2.5%;
+  }
+  .promocion img{
+    margin-left: -5rem;
+  }
+  .promocion ul{
+    /*display: inline-block;
+    text-align: center;*/
+    margin: 0;
+  }
+  .promocion h4{
+    font-size: 36rem;
+    padding-bottom: 15rem;
+  }
+  .promocion p{
+    font-size: 26rem;
+    padding-bottom: 20rem;
+    line-height: 38rem;
+  }
+  .promocion__item2 h2{
+    visibility: hidden;
+    font-size: 0rem;
+    margin: 0rem;
+  }
+  .promocion__item-invisible h2{
+    visibility: visible;
+    margin: 100rem 0rem 20rem 0rem;
+    padding: 0;
+    font-size: 58rem;
+  }
+
+  /*-------- video --------*/
+  .video h4{
+    font-size: 28rem;
+    line-height: 32rem;
+  }
+  .video p{
+    font-size: 32rem;
+    line-height: 48rem;
+    margin-bottom: 36rem;
+  }
+
+  /*-------- servicios --------*/
+  .servicios__item{
+    width: 100%;
+    padding: 2% 4% 2% 4%;
+  }
+  .servicios__item-titulo{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .servicios h2{
+    text-align: center;
+  }
+  .servicios__item h4{
+    font-size: 32rem;
+    color: #30FEA0;
+  }
+  .servicios__item p{
+    font-size: 26rem;
+    line-height: 42rem;
+    margin-bottom: 32rem;
+  }
+  .servicios__item-boton h4{
+    font-size: 24rem;
+    letter-spacing: 4rem;
+  }
+
+
+}

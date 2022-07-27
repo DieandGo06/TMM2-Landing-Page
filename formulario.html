@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Fomrulario de WonderLab</title>
+
+  <title>Wonderlab</title>
+
+  <link rel="stylesheet" href="css/formulario.css">
+  <!--<link rel="stylesheet" href="css/normalize.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+
+<body>
+  <!-- logo -->
+  <div class="logo-flex">
+    <img class="logo-item" src="img/logo.png" alt="WonderLab logo">
+  </div>
+
+  <div class="flex-container">
+    <!-- Titulo -->
+    <div class="flex-item" id="titulo"><h2>Diseña tu evento</h2></div>
+
+    <!-- Formulario -->
+    <div class="flex-item">
+      <form id="formulario">
+        <div class="formulario-flex">
+          <div class="formulario-item col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <div class="formulario-item">
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="mail" required>
+          </div>
+          <div class="formulario-item col1">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono">
+          </div>
+          <div class="formulario-item">
+            <label for="invitados">Número de invitados</label>
+            <input type="text" name="numero de invitados" id="invitados">
+          </div>
+          <div class="formulario-item individual">
+            <label for="fecha">Fecha del Evento</label>
+            <input type="date" name="Fecha del Evento" id="fecha">
+          </div>
+          <div class="formulario-item individual">
+            <label for="comentario">Contanos tus ideas:</label>
+            <textarea name="message" id="comentario"></textarea>
+          </div>
+        </div>
+
+        <!-- Enviar -->
+        <div class="formulario-enviar"><input type="submit" name="Enviar" value="Enviar"></div>
+      </form>
+    </div>
+
+    <!-- Mensaje de agradecimiento -->
+    <div class="mensaje-oculto" id="mensaje">
+      <img src="img/pulgar.png" alt="Pulgar arriba">
+      <h2 id="saludo">Hola *nombre*!</h2>
+      <p>Te enviaremos un mail para ponernos en contacto con vos.</p>
+      <div class="mensaje-registrado"><p>Para activar la promoción recordá reservar con 180 días de anticipación.<p></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="pie"><img src="img/footer2.png" alt="Pie de página"></div>
+  </footer>
+
+  <!-- script -->
+  <script type="text/javascript" src="js/formulario.js"></script>
+</body>
+
+
+</html>
